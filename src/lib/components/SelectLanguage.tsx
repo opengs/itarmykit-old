@@ -49,6 +49,15 @@ export const SelectLanguage = () => {
                         <Flag_svg.USA />
                         USA
                     </motion.div>
+
+                    <motion.div
+                        className=' hover:bg-[#334155] hover:text-white dark:hover:bg-white dark:hover:text-[#334155] hover:rounded-md flex gap-2 items-center p-1 px-3'
+                        variants={itemVariants}
+                        onClick={() => setSelectLanguage('ua')}
+                    >
+                        <Flag_svg.UKRAINE />
+                        USA
+                    </motion.div>
                 </motion.div>
             </motion.div>
         </div>
