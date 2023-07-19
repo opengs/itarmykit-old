@@ -5,6 +5,7 @@ import { zodI18nMap } from 'zod-i18n-map'
 import { en, pl, ua } from '.'
 const translationPL = require('zod-i18n-map/locales/pl/zod.json')
 const translationEn = require('zod-i18n-map/locales/en/zod.json')
+const translationUa = require('zod-i18n-map/locales/ua/zod.json')
 
 i18next.use(initReactI18next).init({
     fallbackLng: 'en',
@@ -19,7 +20,8 @@ i18next.use(initReactI18next).init({
             translation: en,
         },
         ua: {
-            translation: ua
+            translation: ua,
+            zod: translationUa,
         }
     },
 })
