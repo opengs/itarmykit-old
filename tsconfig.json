@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "allowJs": true,
+        "module": "commonjs",
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "outDir": "dist",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "jsx": "react-jsx",
+        "typeRoots": ["src/lib/@types", "node_modules/@types"],
+        "paths": {
+            "@electron/*": ["src/electron/*"],
+            "@preload/*": ["src/preload/*"],
+            "@components/*": ["src/lib/components/*"],
+            "@sections/*": ["src/lib/sections/*"],
+            "@pages/*": ["src/pages/*"],
+            "@motions/*": ["src/lib/motions/*"],
+            "@images/*": ["src/lib/images/*"],
+            "@type/*": ["src/lib/types/*"],
+            "@store/*": ["src/lib/store/*"]
+        }
+    },
+    "include": ["src/**/*", "src/preload/renderer.d.ts"]
+}
