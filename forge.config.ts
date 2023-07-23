@@ -13,7 +13,7 @@ const { version } = packageJson
 const config: ForgeConfig = {
     packagerConfig: {
         name: 'ITArmy',
-        // executableName: 'itarmy',
+        executableName: 'itarmykit',
         // icon: './src/lib/images/logo.png',
         asar: true,
         icon: path.resolve(__dirname, 'src', 'lib', 'images', 'icons', 'icon'),
