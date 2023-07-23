@@ -26,7 +26,7 @@ const config: ForgeConfig = {
             platforms: ['win32'],
             config: (arch: any) => ({
                 name: 'ITArmy',
-                exe: 'itarmy.exe',
+                exe: 'itarmykit.exe',
                 authors: 'slamy',
                 noMsi: true,
                 setupExe: `ITArmy-${version}-win32-${arch}-setup.exe`,
@@ -56,7 +56,7 @@ const config: ForgeConfig = {
             name: '@electron-forge/maker-wix',
             config: {
                 name: 'itarmy',
-                exe: 'itarmy.exe',
+                exe: 'itarmykit.exe',
                 icon: path.resolve(iconDir, 'logo.ico'),
             },
         },
