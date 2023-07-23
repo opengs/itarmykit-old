@@ -2,7 +2,7 @@
     "name": "itarmykit",
     "productName": "ITArmyKIT",
     "version": "0.1.0",
-    "description": "",
+    "description": "IT Army of Ukraine KIT",
     "main": ".webpack/main",
     "scripts": {
         "dev": "electron-forge start",
