@@ -15,6 +15,12 @@ const selectNameModule = (dropmenu: DdosModules, version: string) => {
                 author: 'Arriven',
                 version: version,
             }
+        case DdosModules.MHDDOS_PROXY:
+            return {
+                name: 'MHDDOS_PROXY',
+                author: 'porthole-ascend-cinnamon',
+                version: version,
+            }
         default:
             return {
                 name: 'DB1000N',
@@ -75,6 +81,7 @@ const ModuleModal: React.FC = () => {
                                 className='w-[150px] mb-4'
                                 onClick={() => {
                                     window.api.startDownload({ owner: 'arriven', repo: 'db1000n' })
+                                    // TODO MHDDOS_PROXY -  window.api.startDownload({ owner: 'porthole-ascend-cinnamon', repo: 'mhddos_proxy_releases' })
                                 }}
                             />
                         </motion.div>

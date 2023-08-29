@@ -1,6 +1,7 @@
 import { WebContents } from 'electron'
 import { DdosModules } from '../../lib/store/dropMenuAtom'
 import { startDB1000N } from './DB1000N'
+import { startMHDDOS_PROXY } from './MHDDOS_PROXY'
 
 export const selectModule = (
     ddosModules: DdosModules,
@@ -10,6 +11,9 @@ export const selectModule = (
     switch (ddosModules) {
         case DdosModules.DB1000N:
             startDB1000N(ddosModules, flags, webContents)
+            break
+        case DdosModules.MHDDOS_PROXY:
+            startMHDDOS_PROXY(ddosModules, flags, webContents)
             break
         case DdosModules.GRAPES:
             console.log('no module')
