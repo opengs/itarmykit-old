@@ -14,6 +14,7 @@ export default function Dropmenu() {
 
     const handleModal = () => {
         setSelectModule(DdosModules.DB1000N)
+        setSelectModule(DdosModules.MHDDOS_PROXY)
     }
 
     return (
